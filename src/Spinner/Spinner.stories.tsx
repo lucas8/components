@@ -5,6 +5,7 @@ import { Spinner } from "./";
 storiesOf("Spinner", module).add(
   "Default",
   withPropsCombinations(Spinner, {
-    flavor: ["light", "dark"]
+    flavor: ["light", "dark"],
+    size: [16, 30]
   })
 );

@@ -6,7 +6,8 @@ const spin = keyframes`
 `;
 
 interface SpinnerProps {
-  flavor?: "light" | "dark";
+  flavor: "light" | "dark";
+  size: number;
 }
 
 export default styled.span<SpinnerProps>`
@@ -21,10 +22,10 @@ export default styled.span<SpinnerProps>`
     position: relative;
     top: 0;
     left: 0;
-    height: 30px;
-    width: 30px;
+    height: ${props => props.size}px;
+    width: ${props => props.size}px;
     border-radius: 50%;
-    border: 3px solid
+    border: 2px solid
       ${props =>
         props.flavor == "light" ? theme.neutral.eight : theme.neutral.three};
     border-top-color: transparent;

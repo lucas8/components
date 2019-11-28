@@ -1,7 +1,7 @@
 {
-  "name": "@lucas/components",
-  "version": "0.0.1",
-  "description": "Lucas's component library",
+  "name": "@lucasstettner/components",
+  "version": "0.0.2",
+  "description": "Lucas's Personal Component Library",
   "source": "src/index.ts",
   "main": "dist/lucas-components.js",
   "umd:main": "dist/lucas-components.umd.js",
@@ -95,11 +95,11 @@
     "react": "^16.8.6",
     "react-docgen-typescript-loader": "^3.1.0",
     "react-storybook-addon-props-combinations": "^1.1.0",
-    "styled-components": "^4.2.0",
     "typescript": "<3.6.0"
   },
   "dependencies": {
     "@storybook/addon-a11y": "^5.2.6",
+    "styled-components": "^4.2.0",
     "@svgr/webpack": "^4.3.3",
     "@tippy.js/react": "^2.2.0",
     "react-feather": "^2.0.3",
