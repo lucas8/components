@@ -26,7 +26,7 @@ yarn add @lucasstettner/components
 
 ## Usage <a name = "usage"></a>
 
-```
+```javascript
 import React from "react";
 import { NeutralDarkButton } from "@lucasstettner/components";
 
