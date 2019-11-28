@@ -1,4 +1,5 @@
 module.exports = ({ config, mode }) => {
+  // Remove rules for default storyboard .inline.svg
   const fileLoaderRule = config.module.rules.find(rule =>
     rule.test.test(".svg")
   );
