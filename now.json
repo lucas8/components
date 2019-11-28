@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "@lucas/components",
+  "alias": "lucas-components-gjvzbz94e.now.sh",
+  "scope": "lucas",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": ".storybook-dist" }
+    }
+  ]
+}

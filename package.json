@@ -1,0 +1,109 @@
+{
+  "name": "@lucas/components",
+  "version": "0.0.1",
+  "description": "Lucas's component library",
+  "source": "src/index.ts",
+  "main": "dist/lucas-components.js",
+  "umd:main": "dist/lucas-components.umd.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "start-storybook -p 6006",
+    "build:watch": "microbundle watch --jsx React.createElement",
+    "build": "microbundle --jsx React.createElement",
+    "lint": "eslint src --ext .js,.ts,.tsx",
+    "test": "yarn run lint",
+    "now-build": "build-storybook -c .storybook -o .storybook-dist",
+    "prepublishOnly": "yarn run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "prettier/@typescript-eslint",
+      "react-app"
+    ],
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": 0,
+      "@typescript-eslint/explicit-member-accessibility": 0,
+      "@typescript-eslint/no-empty-interface": 0,
+      "@typescript-eslint/no-var-requires": 0,
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{css,json,md,mdx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "peerDependencies": {
+    "react": ">= 15.0.0",
+    "styled-components": ">= 4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@storybook/addon-actions": "5.0.11",
+    "@storybook/addon-console": "^1.1.0",
+    "@storybook/addon-info": "5.0.11",
+    "@storybook/addon-links": "5.0.11",
+    "@storybook/addon-storysource": "5.0.11",
+    "@storybook/addon-viewport": "5.0.11",
+    "@storybook/addons": "5.0.11",
+    "@storybook/react": "5.0.11",
+    "@types/react": "^16.8.19",
+    "@types/storybook__react": "^4.0.1",
+    "@types/styled-components": "^4.4.0",
+    "@types/styled-system": "^4.2.1",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-react-app": "^3.0.8",
+    "eslint-loader": "3.0.2",
+    "eslint-plugin-flowtype": "2.50.1",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.16.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "microbundle": "^0.11.0",
+    "prettier": "^1.17.1",
+    "react": "^16.8.6",
+    "react-docgen-typescript-loader": "^3.1.0",
+    "react-storybook-addon-props-combinations": "^1.1.0",
+    "styled-components": "^4.2.0",
+    "typescript": "<3.6.0"
+  },
+  "dependencies": {
+    "@storybook/addon-a11y": "^5.2.6",
+    "@svgr/webpack": "^4.3.3",
+    "@tippy.js/react": "^2.2.0",
+    "react-feather": "^2.0.3",
+    "styled-normalize": "^8.x.x",
+    "styled-system": "^4.x.x"
+  }
+}
