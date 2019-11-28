@@ -5,7 +5,11 @@ const spin = keyframes`
   to {transform: rotate(360deg);}
 `;
 
-export default styled.span`
+interface SpinnerProps {
+  flavor?: "light" | "dark";
+}
+
+export default styled.span<SpinnerProps>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,9 +24,12 @@ export default styled.span`
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border: 3px solid ${theme.neutral.five};
+    border: 3px solid
+      ${props =>
+        props.flavor == "light" ? theme.neutral.eight : theme.neutral.three};
     border-top-color: transparent;
-    border-right-color: ${theme.neutral.five};
+    border-right-color: ${props =>
+      props.flavor == "light" ? theme.neutral.eight : theme.neutral.three};
     border-bottom-color: transparent;
     animation: ${spin} 2s linear infinite;
   }

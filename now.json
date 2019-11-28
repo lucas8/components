@@ -1,8 +1,5 @@
 {
-  "version": 1,
-  "name": "@lucas/components",
-  "alias": "lucas-components-gjvzbz94e.now.sh",
-  "scope": "lucas",
+  "version": 2,
   "builds": [
     {
       "src": "package.json",
