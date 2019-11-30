@@ -1,6 +1,6 @@
 {
   "name": "@lucasstettner/components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lucas's Personal Component Library",
   "source": "src/index.ts",
   "main": "dist/lucas-components.js",
@@ -99,10 +99,10 @@
   },
   "dependencies": {
     "@storybook/addon-a11y": "^5.2.6",
-    "styled-components": "^4.2.0",
     "@svgr/webpack": "^4.3.3",
     "@tippy.js/react": "^2.2.0",
     "react-feather": "^2.0.3",
+    "styled-components": "^4.2.0",
     "styled-normalize": "^8.x.x",
     "styled-system": "^4.x.x"
   }
