@@ -24,7 +24,7 @@ interface PImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   image: string;
 }
 
-export default function PImage({ placeholder, image, ...rest }: PImageProps) {
+export function PImage({ placeholder, image, ...rest }: PImageProps) {
   const runOnce = true;
   const [loadState, setLoadState] = useState({
     src: placeholder,

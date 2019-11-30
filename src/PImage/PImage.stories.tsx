@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import PImage from "./PImage";
+import { PImage } from "./PImage";
 
 const Image = () => {
   return (

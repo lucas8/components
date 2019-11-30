@@ -1,6 +1,6 @@
 {
   "name": "@lucasstettner/components",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "description": "Lucas's Personal Component Library",
   "source": "src/index.ts",
   "main": "dist/lucas-components.js",
