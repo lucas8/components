@@ -7,10 +7,6 @@ const Container = styled.div`
   align-items: center;
 `;
 
-interface ContentProps {
-  children?: ReactNode;
-}
-
-export const Content = ({ children }: ContentProps) => {
+export const Content = ({ children }: { children: ReactNode }) => {
   return <Container ref={undefined}>{children}</Container>;
 };

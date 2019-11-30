@@ -7,19 +7,17 @@ const gradient = (props: NavbarProps): string => {
   if (props.flavor == "dark") {
     return `linear-gradient(
         -90deg,
-        rgba(14, 30, 37, 0) 0,
-        ${theme.neutral.five} 5%,
-        ${theme.neutral.five} 90%,
-        rgba(14, 30, 37, 0) 100%
+        ${theme.neutral.five}50 0,
+        ${theme.neutral.five} 50%,
+        ${theme.neutral.five}50 100%
     )`;
   }
 
   return `linear-gradient(
     -90deg,
-    rgba(14, 30, 37, 0) 0,
-    #fff 5%,
-    #fff 90%,
-    rgba(14, 30, 37, 0) 100%
+    #ffffff50 0,
+    #fff 50%,
+    #ffffff50 100%
 )`;
 };
 
