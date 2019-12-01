@@ -23,7 +23,7 @@ const Button = styled.button<ButtonProps>`
   }
   &:focus {
     ${styles.focus};
-    box-shadow: 0 0 0 1px ${theme.ui.wash}, 0 0 0 3px ${theme.brand.border};
+    box-shadow: 0 0 0 3px ${theme.brand.default}50;
   }
 `;
 

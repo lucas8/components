@@ -23,7 +23,7 @@ const DarkButton = styled.button<ButtonProps>`
   }
   &:focus {
     ${styles.focus};
-    box-shadow: 0 0 0 1.5px ${theme.ui.wash}, 0 0 0 3px ${theme.neutral.six};
+    box-shadow: 0 0 0 3px ${theme.neutral.eight}50;
   }
 `;
 
@@ -49,7 +49,7 @@ const LightButton = styled.button<ButtonProps>`
   }
   &:focus {
     ${styles.focus};
-    box-shadow: 0 0 0 1.5px ${theme.ui.wash}, 0 0 0 3px ${theme.neutral.nine};
+    box-shadow: 0 0 0 3px ${theme.neutral.eight}50;
   }
 `;
 

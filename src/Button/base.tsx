@@ -16,7 +16,7 @@ export interface ButtonProps
     SpaceProps,
     WidthProps,
     FontSizeProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   size?: "large" | "small";
   caps?: boolean;
 }
