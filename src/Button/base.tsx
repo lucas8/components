@@ -97,10 +97,7 @@ const base = css<ButtonProps>`
   transition: all ${theme.animation.out};
   opacity: ${props => (props.disabled ? "0.64" : "1")};
   text-decoration: none;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
 
   &:hover {
     ${hover};
@@ -117,6 +114,7 @@ const base = css<ButtonProps>`
 
   svg {
     position: relative;
+    left: 5px;
     top: 2px;
   }
 `;

@@ -9,7 +9,8 @@ import Icon from "./icon.inline.svg";
 const WithIcon = () => {
   return (
     <Fragment>
-      <span>Click Me</span> <Icon />
+      Click Me
+      <Icon />
     </Fragment>
   );
 };
