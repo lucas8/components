@@ -97,7 +97,10 @@ const base = css<ButtonProps>`
   transition: all ${theme.animation.out};
   opacity: ${props => (props.disabled ? "0.64" : "1")};
   text-decoration: none;
-  display: inline-block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     ${hover};
